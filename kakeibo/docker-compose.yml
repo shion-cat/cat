@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres:latest  # ここをpostgresに変更
+    container_name: supabase_db_kakeibo
+    environment:
+      POSTGRES_PASSWORD: example_password
+      POSTGRES_USER: example_user
+      POSTGRES_DB: example_db
+    ports:
+      - "5432:5432"
